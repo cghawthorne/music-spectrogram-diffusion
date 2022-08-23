@@ -167,6 +167,7 @@ def encode_and_index_events(
 
 
 @seqio.map_over_dataset
+@tf.function
 def extract_sequence_with_indices(features,
                                   state_events_end_token=None,
                                   feature_key='targets'):
